@@ -8,19 +8,19 @@ import Footer from "../Layout/Footer";
 import EditBook from "../Features/EditBook";
 
 const Index = () => {
-    return (
-      <BrowserRouter>
-        <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/books_list" element={<ShowBooks />} />
-            <Route path="/edit_book" element={<EditBook />} />
-            <Route path="/add_books" element={<AddBooks />} />
-            <Route path="*" element={<Error />} />
-          </Routes>
-        <Footer />
-      </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/books_list" element={<ShowBooks />} />
+        <Route path="/edit_book" element={<EditBook />} />
+        <Route path="/add_books" element={<AddBooks />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 };
 
 export default Index;
